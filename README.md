@@ -1,5 +1,7 @@
 # Collaborative Code Editor
 
+**Live demo:** [code-sync-ALB-671075485.ap-northeast-1.elb.amazonaws.com](http://code-sync-ALB-671075485.ap-northeast-1.elb.amazonaws.com)
+
 A real-time collaborative code editor built with React, Monaco Editor, and Yjs. Multiple users can edit the same document simultaneously, with live presence awareness showing who's currently in the session.
 
 ## How it works
