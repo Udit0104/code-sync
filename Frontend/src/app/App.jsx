@@ -10,7 +10,7 @@ function App() {
     () => new URLSearchParams(window.location.search).get("username") || ""
   )
 
-  const { yText, users } = useCollaboration(username)
+  const { yText, users, language, setLanguage } = useCollaboration(username)
 
   const handleJoin = (name) => {
     setUsername(name)
@@ -24,7 +24,7 @@ function App() {
   return (
     <main className="h-screen w-full bg-gray-950 flex gap-4 p-4">
       <UserList users={users} />
-      <CodeEditor yText={yText} />
+      <CodeEditor yText={yText} language={language} onLanguageChange={setLanguage} />
     </main>
   )
 }
